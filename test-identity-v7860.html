@@ -6,7 +6,7 @@
   function freshToken(){const b=new Uint8Array(32);crypto.getRandomValues(b);return Array.from(b,x=>x.toString(16).padStart(2,'0')).join('')}
   let token='';try{token=(localStorage.getItem(KEY)||'').toLowerCase()}catch(e){}
   if(!/^[a-f0-9]{64}$/.test(token)){token=freshToken();try{localStorage.setItem(KEY,token)}catch(e){}}
-  const form=document.createElement('form');form.method='post';form.action='https://script.google.com/macros/s/AKfycbzm_wjsjBPITntljnOhUo-lXkAS5gTVXMpk_YFU9SjOBYwiWJVsZ0owje6a5LZb_jMO9g/exec';form.style.display='none';
+  const form=document.createElement('form');form.method='post';form.action='https://script.google.com/macros/s/AKfycbzm_wjsjBPlTntljnOhUo-IXkAS5gTVXMpk_YFU9SjOBYwiWJVsZ0owje6a5LZb_jMO9g/exec';form.style.display='none';
   const input=document.createElement('input');input.type='hidden';input.name='deviceToken';input.value=token;form.appendChild(input);
   document.body.appendChild(form);form.submit();
 })();
