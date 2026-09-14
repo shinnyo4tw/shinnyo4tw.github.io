@@ -282,7 +282,7 @@
 			<key>Label</key>
 			<string>式典資材管理</string>
 			<key>PayloadDescription</key>
-			<string>將式典資材管理加入主畫面，只連到既有正式系統。</string>
+			<string>將式典資材管理加入主畫面；由固定安裝入口記住這台裝置，之後自動辨識。</string>
 			<key>PayloadDisplayName</key>
 			<string>式典資材管理</string>
 			<key>PayloadIdentifier</key>
@@ -296,7 +296,9 @@
 			<key>Precomposed</key>
 			<true/>
 			<key>URL</key>
-			<string>https://script.google.com/macros/s/AKfycbyxk4bHlNqU90sm6w8yjsHvdda0LcW96JII_5xZwVTZ5M6EBTE2g-yU2RYdjq-WnW_7/exec</string>
+			<string>https://shinnyo4tw.github.io/app.html</string>
+			<key>IgnoreManifestScope</key>
+			<true/>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
